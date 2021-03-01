@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/javascript/script.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<header>
+    <div id="highscore" class="nav">View Highscore</div>
+    <div class="title">Code Quiz</div>
+    <div class="time">Time Remaining: <span id="timer">60</span></div>
+</header>
+
+<body>
+
+    <div class="container">
+        <div id="questionContainer" class='hide'>
+            <div id="questionNumber">Questionasdfasdf: </div>
+            <div id="question">Question</div>
+            <div id="answerButtons" class='btnGrid'>
+                <button id='a' class='btn'>buttonA</button>
+                <button id='b' class='btn'>buttonB</button>
+                <button id='c' class='btn'>buttonC</button>
+                <button id='d' class='btn'>buttonD</button>
+            </div>
+            <div id="correct" class='hide'>asdfasdfa</div>
+        </div>
+        <div id="start" class="startPage ">
+            <h1>Welcome to the quiz page</h1>
+            <div>Please click start if you would like to test your knowledge on HTML</div>
+            <button class='btn startButton'>Start</button>
+        </div>
+        <section id = highScores class = 'hide'>
+            <h1>High Scores</h1>
+            <div id="quizScore">test</div>
+            <input type="text" id='scoreName' name='scoreName'>
+            <button id="submitScore">submit</button>
+
+
+        </section>
+        <section id="results">
+
+        </section>
+    </div>
+    </div>
+</body>
+
+</html>
