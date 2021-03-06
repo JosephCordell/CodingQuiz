@@ -206,7 +206,7 @@ function printHighscores() {
 
 const questions = [
     {
-        question:`What does HTML stand for?1`,
+        question:`What does HTML stand for?`,
         answers: [
             { text: `Home Tool Markup Language`, correct: false},
             { text: `Hyper Text Markup Language`, correct: true},
@@ -215,7 +215,7 @@ const questions = [
         ]
     },
     {
-        question:`Who is making the Web standards?2`,
+        question:`Who is making the Web standards?`,
         answers: [
             { text: `Google`, correct: false},
             { text: `Microsoft`, correct: false},
