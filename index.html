@@ -11,16 +11,16 @@
 </head>
 
 <header>
-    <div id="highscore" class="nav">View Highscore</div>
-    <div class="title">Code Quiz</div>
-    <div class="time">Time Remaining: <span id="timer">60</span></div>
+    <button id="high" class="btn">View High Scores</button>
+    <button id="title" class = 'btn'>Code Quiz</button>
+    <div class="time btn">Time Remaining: <span id="timer">60</span></div>
 </header>
 
 <body>
 
     <div class="container">
         <div id="questionContainer" class='hide'>
-            <div id="questionNumber">Questionasdfasdf: </div>
+            <div id="questionNumber">Questions: </div>
             <div id="question">Question</div>
             <div id="answerButtons" class='btnGrid'>
                 <button id='a' class='btn'>buttonA</button>
@@ -32,16 +32,20 @@
         </div>
         <div id="start" class="startPage ">
             <h1>Welcome to the quiz page</h1>
-            <div>Please click start if you would like to test your knowledge on HTML</div>
+            <div>Please click start if you would like to test your knowledge on HTML. <br>Wrong answers will deduct the timer by 5 seconds </div>
+            <br>
             <button class='btn startButton'>Start</button>
         </div>
         <section id = highScores class = 'hide'>
             <h1>High Scores</h1>
-            <div id="quizScore">test</div>
-            <input type="text" id='scoreName' name='scoreName'>
-            <button id="submitScore">submit</button>
-
-
+            <div id="records"></div>
+            <div id="quizScore"></div>
+            <div id="submission" class='hide'>
+                <input type="text" id='scoreName' name='scoreName'>
+                <button id="submitScore" class='btn'>submit</button>
+            </div>
+            <br>
+            <button id="clearScore" class = 'btn wrong'> Clear Scores</button>
         </section>
         <section id="results">
 

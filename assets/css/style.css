@@ -1,7 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 :root{
@@ -25,19 +24,10 @@ body {
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
-    /* display: flex; */
     height: 100vh;
     width: 100vw;
     background-color: hsl(var(--hue), 100%, 20%);
 }
-
-
-/* body.correct {
-    --hue: var(--hue-correct);
-  }
-body.wrong {
-    --hue: var(--hue-wrong);
-  } */
 
 .container {
     display: flex;
@@ -67,14 +57,11 @@ body.wrong {
     color: white;
     outline:none;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .btn:hover {
     border-color: black;
-}
-
-.btn.correct{
-    --hue: var(--hue-correct);
 }
 
 .btn.wrong{
